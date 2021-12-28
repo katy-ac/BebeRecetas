@@ -36,7 +36,6 @@ nav a{
 	}
 	
 	.overbar {
-		color: #fff;
 		height: 44px;
 		background-color: #e8862a;
 		position: relative;
@@ -52,7 +51,7 @@ nav a{
 		color:inherit;
 		font-size:16px;
 		} 
-		ul li{
+		#menu ul li{
 			font-family: 'DM Sans', sans-serif;
 			text-transform: uppercase;
 			font-weight: 700;
@@ -259,7 +258,7 @@ body, html {
 	margin: 43px 0 18px;
 	font-family: 'DM Sans';
 }
-p, button, li, span {
+p, button, span {
 	font-family: "DM Sans";
 	font-size: 12px;
 	color: #1F1F1F;
@@ -407,8 +406,6 @@ p, button, li, span {
 	100% { transform: translateX(-500%); }
 }
 
-* { box-sizing: border-box; }
-
 html { scroll-behavior: smooth; }
 
 .cover {
@@ -433,6 +430,7 @@ html { scroll-behavior: smooth; }
 	animation-duration: 20s;
 	animation-iteration-count: infinite;
 	animation-timing-function: linear;
+	display: block;
 }
 
 .slides:hover .slide {
@@ -500,8 +498,8 @@ html { scroll-behavior: smooth; }
 	}
 
 	.caption {
-		font-size: 80px;
-		bottom: 80px;
+		font-size: 60px;
+		bottom: 60px;
 		right: 50px;
 	}
 }  
