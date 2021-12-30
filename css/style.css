@@ -132,7 +132,7 @@ footer .newsletter form input[type="submit"] {
 	color: #fff;
   }
 
-.container {
+.container2 {
 	max-width: 100%;
 	padding: 20px 100px;
 }
@@ -167,8 +167,7 @@ body, html {
 	height: 110px
 }
 .logo__img{
-	height: 116px;
-	margin-bottom: -89px;
+	height: 70%;
 }
 #grilla {
     display: grid;
@@ -197,11 +196,24 @@ body, html {
 	justify-content:space-evenly;
 
  }
-
+ #recetas{
+	margin-bottom: 40px;
+ }
  section{
 	 display: flex;
 	 flex-direction: column;
+	 max-width: 100%;
  }
+ header #menu {
+	padding-top: 20px;
+	padding-bottom: 20px;
+  }
+  
+  header #menu .nav-container nav {
+	float: right;
+	list-style: none;
+	margin-top: 20px;
+  }
  .item-receta {
 	margin-bottom: 35px;
   }

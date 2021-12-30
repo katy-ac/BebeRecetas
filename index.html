@@ -3,191 +3,199 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css.map">
+    <link rel="stylesheet" href="css/bootstrap-grid.rtl.min.css">
+    <link rel="stylesheet" href="css/bootstrap-grid.rtl.min.css.map">
+    <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="css/bootstrap-reboot.min.css.map">
+    <link rel="stylesheet" href="css/bootstrap-utilities.min.css">
+    <link rel="stylesheet" href="css/bootstrap-utilities.min.css.map">
+    <link rel="stylesheet" href="css/bootstrap-utilities.rtl.min.css">
+    <link rel="stylesheet" href="css/bootstrap-utilities.rtl.min.css.map">
+    <link rel="stylesheet" href="css/bootstrap.min.css.map">
+    <link rel="stylesheet" href="css/bootstrap.rtl.min.css">
+    <link rel="stylesheet" href="css/bootstrap.rtl.min.css.map">
     <link rel="stylesheet" href="css/style.css" />
+    <!-- Bootstrap -->
     <title>Inicio</title>
 </head>
 <body>
     <div id="grilla">
-        <header>
-            <div class = overbar>
+        <header class="container-fluid">
+            <div class= "overbar container-fluid">
                 <nav>
                     <li><a href="">Iniciar sesion</a></li>
                     <li class="borde"><a href="">Registrarme</a></li>
                 </nav>
             </div>
-            <section>
-                <div id="menu">
-                    <a href="index.html"><img class="logo__img" src="img/logo.svg" alt="Recetas para bebés."></a>
-                    <ul>
-                        <li><a href="tienda.html">Tienda</a></li>
-                        <li><a href="menus.html">Menus</a></li>
-                        <li><a href="recetas.html">Recetas</a></li>
-                        <li><a href="alimentos.html">Alimentos</a></li>
-                        <li><a href="guia.html">Guía</a></li>
-                        <li><a href="index.html">Inicio</a></li>
-                        
-                    </ul>    
-                </div>
-                <nav id="hamburguesa">
-                    <input  type="checkbox" id="menu2">
-                    <label id="lbl--hamburguesa" for="menu2"> ☰ </label>
-                    <ul>
-                        <li><a href="index.html">Inicio</a></li>
-                        <li><a href="guia.html">Guía</a></li>
-                        <li><a href="alimentos.html">Alimentos</a></li>
-                        <li><a href="recetas.html">Recetas</a></li>
-                        <li><a href="menus.html">Menus</a></li>
-                        <li><a href="tienda.html">Tienda</a></li>
-                    </ul>   
-                  </nav>
-                  <div class="cover">
-                    <div class="slider" id="slider">
-                      <ul class="slides">
-                        <li class="slide" id="slide1">
-                          <a href="#">
-                            <!-- <p class="caption">Recetas navideñas</p> -->
-                            <img src="img/Inicio.png" alt="Inicio">
-                          </a>
-                        </li>
-                        <li class="slide" id="slide2">
-                          <a href="#">
-                            <p class="caption">Guía de alimentación</p>
-                            <img src="img/guia.png" alt="guia">
-                          </a>
-                        </li>
-                        <li class="slide" id="slide3">
-                          <a href="#">
-                            <p class="caption">Alimentos permitidos</p>
-                            <img src="img/alimentos.png" alt="alimentos">
-                          </a>
-                        </li>
-                        <li class="slide" id="slide4">
-                          <a href="#">
-                            <p class="caption">Recetas</p>
-                            <img src="img/recetas.png" alt="Recetas">
-                          </a>
-                        </li>
-                        <li class="slide" id="slide5">
-                          <a href="#">
-                             <p class="caption">Menus</p>
-                             <img src="img/menus.png" alt="menus">
-                          </a>
-                        </li>
-                        <li class="slide">
-                          <a href="#">
-                            <!-- <p class="caption">Recetas navideñas</p> -->
-                            <img src="img/Inicio.png" alt="Inicio">
-                          </a>
-                        </li>
-                      </ul>
-                      <ul class="slider-controler">
-                        <li><a href="#slide1">&bullet;</a></li>
-                        <li><a href="#slide2">&bullet;</a></li>
-                        <li><a href="#slide3">&bullet;</a></li>
-                        <li><a href="#slide4">&bullet;</a></li>
-                        <li><a href="#slide5">&bullet;</a></li>
-                      </ul>
+            <div id="menu" class="container">
+                <div class="row">
+                    <div class="logo col-lg-2 col-md-2 col-sm-2 col-xs-2 text-left">
+                        <a href="index.html"><img class="logo__img" src="img/logo.svg" alt="Recetas para bebés."></a>                        
                     </div>
-                  </div>
-                <div class="bannerInicio">
-                    <img class="mobile" src="img/inicio-mobile.png" alt="banner">
+                   <div class="nav-container col-lg-10 col-md-10 col-sm-10 col-xs-10">
+                       <nav>
+                        
+                            <li><a href="tienda.html">Tienda</a></li>
+                            <li><a href="menus.html">Menus</a></li>
+                            <li><a href="recetas.html">Recetas</a></li>
+                            <li><a href="alimentos.html">Alimentos</a></li>
+                            <li><a href="guia.html">Guía</a></li>
+                            <li><a href="index.html">Inicio</a></li>   
+                        
+                       </nav>  
+                   </div>
                 </div>
-            </section>
-            <div class="content-wrapper">
-                <img src="img/Descuento.png" alt="Publicidad"> 
             </div>
-            <div class="text-center">
+            <div class="cover container-fluid">
+                <div class="slider" id="slider">
+                  <ul class="slides">
+                    <li class="slide" id="slide1">
+                      <a href="#">
+                        <img src="img/Inicio.png" alt="Inicio">
+                      </a>
+                    </li>
+                    <li class="slide" id="slide2">
+                      <a href="#">
+                        <p class="caption">Guía de alimentación</p>
+                        <img src="img/guia.png" alt="guia">
+                      </a>
+                    </li>
+                    <li class="slide" id="slide3">
+                      <a href="#">
+                        <p class="caption">Alimentos permitidos</p>
+                        <img src="img/alimentos.png" alt="alimentos">
+                      </a>
+                    </li>
+                    <li class="slide" id="slide4">
+                      <a href="#">
+                        <p class="caption">Recetas</p>
+                        <img src="img/recetas.png" alt="Recetas">
+                      </a>
+                    </li>
+                    <li class="slide" id="slide5">
+                      <a href="#">
+                         <p class="caption">Menus</p>
+                         <img src="img/menus.png" alt="menus">
+                      </a>
+                    </li>
+                    <li class="slide">
+                      <a href="#">
+                        <img src="img/Inicio.png" alt="Inicio">
+                      </a>
+                    </li>
+                  </ul>
+                  <ul class="slider-controler">
+                    <li><a href="#slide1">&bullet;</a></li>
+                    <li><a href="#slide2">&bullet;</a></li>
+                    <li><a href="#slide3">&bullet;</a></li>
+                    <li><a href="#slide4">&bullet;</a></li>
+                    <li><a href="#slide5">&bullet;</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="content-wrapper container-fluid">
+                <img src="img/Descuento.png" alt="Publicidad"> 
+              </div>
+              <div class="text-center container-fluid">
                 <h1>Encuentra recetas para tu bebé para preparar sus comidas favoritas</h1>
                 <p>Encuentra tu receta escribiendo palabras claves</p>
                 <form class="box fleft fwidth" method="GET" action="" id="form-buscar-receta">
                     <input type="text" name="s" id="palabra-buscada" placeholder="ej: salmón con alcaparras" value="">
                     <input type="hidden" name="site_section" value="recipe">
-
+    
                     <input type="submit" value="buscar" id="buscar-receta">
                 </form>
             </div>
         </header>
-        <main>
-            <div class="item-receta">
-                <div class="wrapper box">
-                    <div class="content">
-                      <div class="img box">
-                        <img class="img" src="img/helado navideño.png" alt="receta">
-                      </div>
-                      <h2>Helado de nieve</h2>
+        <main id="recetas" class="container-fluid">
+            <div class="row">
+                <div class="item-receta col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <div class="wrapper box">
+                        <div class="content">
+                          <div class="img box">
+                            <img class="img" src="img/helado navideño.png" alt="receta">
+                          </div>
+                          <h2>Helado de nieve</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-receta col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <div class="wrapper box">
+                        <div class="content">
+                          <div class="img box">
+                            <img class="img" src="img/Arbol-comestible.png" alt="receta">
+                          </div>
+                          <h2>Arbol de frutas</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-receta col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <div class="wrapper box">
+                        <div class="content">
+                          <div class="img box">
+                            <img class="img" src="img/Arbol-gelatina.png" alt="receta">
+                          </div>
+                          <h2>Arbol de gelatina</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-receta col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <div class="wrapper box">
+                        <div class="content">
+                          <div class="img box">
+                            <img class="img" src="img/cake-pops.png" alt="receta">
+                          </div>
+                          <h2>Cakepops renos</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-receta col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <div class="wrapper box">
+                        <div class="content">
+                          <div class="img box">
+                            <img class="img" src="img/cupcake arbol.png" alt="receta">
+                          </div>
+                          <h2>Cupcakes Arbol</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-receta col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <div class="wrapper box">
+                        <div class="content">
+                          <div class="img box">
+                            <img class="img" src="img/postre navideño.png" alt="receta">
+                          </div>
+                          <h2>Muñeco de nieve dulce</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-receta col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <div class="wrapper box">
+                        <div class="content">
+                          <div class="img box">
+                            <img class="img" src="img/postre relleno navideño.png" alt="receta">
+                          </div>
+                          <h2>Cakepops de nieve</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-receta col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <div class="wrapper box">
+                        <div class="content">
+                          <div class="img box">
+                            <img class="img" src="img/cupcake arbol.png" alt="receta">
+                          </div>
+                          <h2>Cupcakes Arbol</h2>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="item-receta">
-                <div class="wrapper box">
-                    <div class="content">
-                      <div class="img box">
-                        <img class="img" src="img/Arbol-comestible.png" alt="receta">
-                      </div>
-                      <h2>Arbol de frutas</h2>
-                    </div>
-                </div>
-            </div>
-            <div class="item-receta">
-                <div class="wrapper box">
-                    <div class="content">
-                      <div class="img box">
-                        <img class="img" src="img/Arbol-gelatina.png" alt="receta">
-                      </div>
-                      <h2>Arbol de gelatina</h2>
-                    </div>
-                </div>
-            </div>
-            <div class="item-receta">
-                <div class="wrapper box">
-                    <div class="content">
-                      <div class="img box">
-                        <img class="img" src="img/cake-pops.png" alt="receta">
-                      </div>
-                      <h2>Cakepops renos</h2>
-                    </div>
-                </div>
-            </div>
-            <div class="item-receta">
-                <div class="wrapper box">
-                    <div class="content">
-                      <div class="img box">
-                        <img class="img" src="img/cupcake arbol.png" alt="receta">
-                      </div>
-                      <h2>Cupcakes Arbol</h2>
-                    </div>
-                </div>
-            </div>
-            <div class="item-receta">
-                <div class="wrapper box">
-                    <div class="content">
-                      <div class="img box">
-                        <img class="img" src="img/postre navideño.png" alt="receta">
-                      </div>
-                      <h2>Muñeco de nieve dulce</h2>
-                    </div>
-                </div>
-            </div>
-            <div class="item-receta">
-                <div class="wrapper box">
-                    <div class="content">
-                      <div class="img box">
-                        <img class="img" src="img/postre relleno navideño.png" alt="receta">
-                      </div>
-                      <h2>Cakepops de nieve</h2>
-                    </div>
-                </div>
-            </div>
-            <div class="item-receta">
-                <div class="wrapper box">
-                    <div class="content">
-                      <div class="img box">
-                        <img class="img" src="img/cupcake arbol.png" alt="receta">
-                      </div>
-                      <h2>Cupcakes Arbol</h2>
-                    </div>
-                </div>
-            </div>
+            
         </main>
         <footer>
             <section class="newsletter">
@@ -196,7 +204,7 @@
                                 <input type="text" name="nuevo_suscriptor_name" id="nuevo_suscriptor_name" placeholder="Ingresa tu nombre" validate="">
                                 <input type="text" name="nuevo_suscriptor_apellido" id="nuevo_suscriptor_apellido" placeholder="Ingresa tu apellido" validate="">
                                 <input type="email" name="nuevo_suscriptor" id="nuevo_suscriptor_email" placeholder="Ingresa tu email" validate="">
-                                <div class="container">
+                                <div class="container2">
                                     <div class="containerSelectionNewsletter">
                                         <table class="suscripcion">
                                             <tr> 
@@ -228,4 +236,10 @@
             </footer> 
     </div>       
 </body>
+<script src="js/jquery-3.6.0.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/bootstrap.bundle.min.js.map"></script>
+<script src="js/bootstrap.esm.min.js"></script>
+<script src="js/bootstrap.esm.min.js.map"></script>
 </html>
