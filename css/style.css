@@ -132,11 +132,14 @@ footer .newsletter form input[type="submit"] {
 	color: #fff;
   }
 
-.container2 {
-	max-width: 100%;
-	padding: 20px 100px;
+  @media (max-width: 580px){
+    footer .newsletter form input{
+    width: 90% !important;
 }
 
+.containerTipoContenido {
+    padding: 0.5rem 0;
+}
 
 .socialmedia ul li{
 	font-family: 'DM Sans', sans-serif;
@@ -299,6 +302,11 @@ p, button, span {
     margin-top: 25px;
     margin-bottom: 46px;
 }
+@media (max-width: 640px) {
+	.content-wrapper {
+		padding: 3px 3px
+	}
+  }
 @media  (max-width: 640px) {
 	.bannerInicio .mobile{
           display: block;  
