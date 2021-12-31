@@ -3,166 +3,211 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon.ico">
     <link rel="stylesheet" href="css/style.css" />
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css.map">
+    <link rel="stylesheet" href="css/bootstrap-grid.rtl.min.css">
+    <link rel="stylesheet" href="css/bootstrap-grid.rtl.min.css.map">
+    <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="css/bootstrap-reboot.min.css.map">
+    <link rel="stylesheet" href="css/bootstrap-utilities.min.css">
+    <link rel="stylesheet" href="css/bootstrap-utilities.min.css.map">
+    <link rel="stylesheet" href="css/bootstrap-utilities.rtl.min.css">
+    <link rel="stylesheet" href="css/bootstrap-utilities.rtl.min.css.map">
+    <link rel="stylesheet" href="css/bootstrap.min.css.map">
+    <link rel="stylesheet" href="css/bootstrap.rtl.min.css">
+    <link rel="stylesheet" href="css/bootstrap.rtl.min.css.map">
+    
+    <!-- Bootstrap -->
     <title>Recetas</title>
 </head>
 <body>
-    <div id="grilla">
-        <header>
-            <div class = overbar>
+    <!-- <div id="grilla"> -->
+        <header class="container-fluid">
+            <div class= "overbar container-fluid">
                 <nav>
                     <li><a href="">Iniciar sesion</a></li>
                     <li class="borde"><a href="">Registrarme</a></li>
                 </nav>
             </div>
-            <section>
-                <div id="menu">
-                    <a href="index.html"><img class="logo__img" src="img/logo.svg" alt="Recetas para bebés."></a>
-                    <ul>
-                        <li><a href="tienda.html">Tienda</a></li>
-                        <li><a href="menus.html">Menus</a></li>
-                        <li><a href="recetas.html">Recetas</a></li>
-                        <li><a href="alimentos.html">Alimentos</a></li>
-                        <li><a href="guia.html">Guía</a></li>
-                        <li><a href="index.html">Inicio</a></li>
+            <div id="menu" class="container">
+                <div class="row">
+                    <div class="logo col-lg-2 col-md-2 col-sm-2 col-xs-2 text-left">
+                        <a href="index.html"><img class="logo__img" src="img/logo.svg" alt="Recetas para bebés."></a>                        
+                    </div>
+                   <div class="nav-container col-lg-10 col-md-10 col-sm-10 col-xs-10">
+                       <nav class="hidden-sm hidden-xs">
                         
-                    </ul>    
+                            <li><a href="tienda.html">Tienda</a></li>
+                            <li><a href="menus.html">Menus</a></li>
+                            <li><a href="recetas.html">Recetas</a></li>
+                            <li><a href="alimentos.html">Alimentos</a></li>
+                            <li><a href="guia.html">Guía</a></li>
+                            <li><a href="index.html">Inicio</a></li>   
+                        
+                       </nav>  
+                       <div class="dropdown hidden-lg hidden-md fright">
+                        <button class="btn btn-secondary dropdown-toggle btn-naranja" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                          Menú
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item" href="tienda.html">Tienda</a></li>
+                            <li><a class="dropdown-item" href="menus.html">Menus</a></li>
+                            <li><a class="dropdown-item" href="recetas.html">Recetas</a></li>
+                            <li><a class="dropdown-item" href="alimentos.html">Alimentos</a></li>
+                            <li><a class="dropdown-item" href="guia.html">Guía</a></li>
+                            <li><a class="dropdown-item" href="index.html">Inicio</a></li>
+                        </ul>
+                      </div>
+                   </div>
                 </div>
-                <div>
-                    <img src="img/recetas.png" alt="banner">
-                </div>
-            </section>
-            <div class="text-center">
+            </div>
+            <div>
+                <img src="img/recetas.png" alt="banner">
+            </div>
+              <div class="text-center container-fluid">
                 <h1>Encuentra recetas para tu bebé para preparar sus comidas favoritas</h1>
                 <p>Encuentra tu receta escribiendo palabras claves</p>
                 <form class="box fleft fwidth" method="GET" action="" id="form-buscar-receta">
                     <input type="text" name="s" id="palabra-buscada" placeholder="ej: salmón con alcaparras" value="">
                     <input type="hidden" name="site_section" value="recipe">
-
+    
                     <input type="submit" value="buscar" id="buscar-receta">
                 </form>
             </div>
         </header>
-        <main>
-            <div class="item-receta">
-                <div class="wrapper box">
-                    <div class="content">
-                      <div class="img box">
-                        <img class="img" src="img/image[288].png" alt="receta">
-                      </div>
-                      <h2>Zorro-Panqueca</h2>
+        <main id="recetas" class="container-fluid">
+            <div class="row">
+                <div class="item-receta col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <div class="wrapper box">
+                        <div class="content">
+                            <div class="img box">
+                              <img class="img" src="img/image[288].png" alt="receta">
+                            </div>
+                            <h2>Zorro-Panqueca</h2>
+                          </div>
+                    </div>
+                </div>
+                <div class="item-receta col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <div class="wrapper box">
+                        <div class="content">
+                            <div class="img box">
+                              <img class="img" src="img/pinchos de frutas.png" alt="receta">
+                            </div>
+                            <h2>Brochetas saludables</h2>
+                          </div>
+                    </div>
+                </div>
+                <div class="item-receta col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <div class="wrapper box">
+                        <div class="content">
+                            <div class="img box">
+                              <img class="img" src="img/fondo marino.png" alt="receta">
+                            </div>
+                            <h2>Fondo marino</h2>
+                          </div>
+                    </div>
+                </div>
+                <div class="item-receta col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <div class="wrapper box">
+                        <div class="content">
+                            <div class="img box">
+                              <img class="img" src="img/sandwich de queso.png" alt="receta">
+                            </div>
+                            <h2>Auto-sandwich</h2>
+                          </div>
+                    </div>
+                </div>
+                <div class="item-receta col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <div class="wrapper box">
+                        <div class="content">
+                            <div class="img box">
+                              <img class="img" src="img/nave de fruta.png" alt="receta">
+                            </div>
+                            <h2>Nave espacial de fruta</h2>
+                          </div>
+                    </div>
+                </div>
+                <div class="item-receta col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <div class="wrapper box">
+                        <div class="content">
+                            <div class="img box">
+                              <img class="img" src="img/Ositos saludables.png" alt="receta">
+                            </div>
+                            <h2>Ositos-Sandwich</h2>
+                          </div>
+                    </div>
+                </div>
+                <div class="item-receta col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <div class="wrapper box">
+                        <div class="content">
+                            <div class="img box">
+                              <img class="img" src="img/nido de codorniz.png" alt="receta">
+                            </div>
+                            <h2>Nido de Codorniz</h2>
+                          </div>
+                    </div>
+                </div>
+                <div class="item-receta col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <div class="wrapper box">
+                        <div class="content">
+                            <div class="img box">
+                              <img class="img" src="img/sincronizada-marina.png" alt="receta">
+                            </div>
+                            <h2>Pulpo-Sandwich</h2>
+                          </div>
                     </div>
                 </div>
             </div>
-            <div class="item-receta">
-                <div class="wrapper box">
-                    <div class="content">
-                      <div class="img box">
-                        <img class="img" src="img/pinchos de frutas.png" alt="receta">
-                      </div>
-                      <h2>Brochetas saludables</h2>
-                    </div>
-                </div>
-            </div>
-            <div class="item-receta">
-                <div class="wrapper box">
-                    <div class="content">
-                      <div class="img box">
-                        <img class="img" src="img/fondo marino.png" alt="receta">
-                      </div>
-                      <h2>Fondo marino</h2>
-                    </div>
-                </div>
-            </div>
-            <div class="item-receta">
-                <div class="wrapper box">
-                    <div class="content">
-                      <div class="img box">
-                        <img class="img" src="img/sandwich de queso.png" alt="receta">
-                      </div>
-                      <h2>Auto-sandwich</h2>
-                    </div>
-                </div>
-            </div>
-            <div class="item-receta">
-                <div class="wrapper box">
-                    <div class="content">
-                      <div class="img box">
-                        <img class="img" src="img/nave de fruta.png" alt="receta">
-                      </div>
-                      <h2>Nave espacial de fruta</h2>
-                    </div>
-                </div>
-            </div>
-            <div class="item-receta">
-                <div class="wrapper box">
-                    <div class="content">
-                      <div class="img box">
-                        <img class="img" src="img/Ositos saludables.png" alt="receta">
-                      </div>
-                      <h2>Ositos-Sandwich</h2>
-                    </div>
-                </div>
-            </div>
-            <div class="item-receta">
-                <div class="wrapper box">
-                    <div class="content">
-                      <div class="img box">
-                        <img class="img" src="img/nido de codorniz.png" alt="receta">
-                      </div>
-                      <h2>Nido de Codorniz</h2>
-                    </div>
-                </div>
-            </div>
-            <div class="item-receta">
-                <div class="wrapper box">
-                    <div class="content">
-                      <div class="img box">
-                        <img class="img" src="img/sincronizada-marina.png" alt="receta">
-                      </div>
-                      <h2>Pulpo-Sandwich</h2>
-                    </div>
-                </div>
-            </div>
-        </main>
             
+        </main>
         <footer>
             <section class="newsletter">
                 <h3>Suscríbete a nuestros newsletters y obtén un código con un <strong>10%</strong> de descuento en tu primera compra.</h3>
-                            <form>
-                                <input type="text" name="nuevo_suscriptor_name" id="nuevo_suscriptor_name" placeholder="Ingresa tu nombre" validate="">
-                                <input type="text" name="nuevo_suscriptor_apellido" id="nuevo_suscriptor_apellido" placeholder="Ingresa tu apellido" validate="">
-                                <input type="email" name="nuevo_suscriptor" id="nuevo_suscriptor_email" placeholder="Ingresa tu email" validate="">
-                                <div class="container">
-                                    <div class="containerSelectionNewsletter">
-                                        <table class="suscripcion">
-                                            <tr> 
-                                                <td><label for="tipo_contenido"> Suscribirme a:</label></td>
-                                                <td><label for="tipo_contenido">Recetas y novedades</label></td>
-                                                <td><input type="checkbox" checked="checked"  name="checkContenido[]" value="recetas" id="checkRecetasNewsletter"></td>
-                                            </tr>
-                                                <td></td>
-                                                <td><label for="tipo_contenido">Menú Semanal</label></td>
-                                                <td><input type="checkbox" checked="checked"  name="checkContenido[]" value="menu" id="checkMenuNewsletter"></td>
-                                            </tr>
-                                        </table>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" name="nuevo_suscriptor_name" id="nuevo_suscriptor_name" placeholder="Ingresa tu nombre" validate="">
+                        <input type="text" name="nuevo_suscriptor_apellido" id="nuevo_suscriptor_apellido" placeholder="Ingresa tu apellido" validate="">
+                        <input type="email" name="nuevo_suscriptor" id="nuevo_suscriptor_email" placeholder="Ingresa tu email" validate="">
+                                <div class="container containerTipoContenido">
+                                    <div class="row containerSelectionNewsletter">
+                                        <div class="col-md-4 labelTipoContenido">
+                                            Suscribirme a:
+                                        </div>
+                                        <div class="col-md-8 containerNewsletterCheck">
+                                            <div class="checkboxNewsletter">
+                                              <input type="checkbox" checked="checked" class="checkContenido" name="checkContenido[]" value="recetas" id="checkRecetasNewsletter">
+                                              <label for="tipo_contenido">Recetas y novedades</label>
+                                            </div>
+                                            <div class="checkboxNewsletter">
+                                              <input type="checkbox" checked="checked" class="checkContenido" name="checkContenido[]" value="menu" id="checkMenuNewsletter">
+                                              <label for="tipo_contenido">Menú Semanal</label>
+                                            </div>
+                                        </div>
                                     </div>
-                                    
-                                </div>
-                                <input type="submit" value="suscribirme">
-                            </form>
-                            <p>También estamos en redes sociales. Síguenos y entérate de todas las recetas y novedades</p>
-                            <div class="socialmedia">
+                                        </div>
+                          
+                        <input type="submit" value="suscribirme">
+                    </div>
+                            <p class="rs">También estamos en redes sociales. Síguenos y entérate de todas las recetas y novedades</p>
                                 <ul>
                                     <li><a target="_blank" href=""><img src="img/pinterest.png" alt="instagram"></a></li>
                                     <li><a target="_blank" href=""><img src="img/youtube.png" alt="facebook"></a></li>
                                     <li><a target="_blank" href=""><img src="img/facebook.png" alt="youtube"></a></li>
                                     <li><a target="_blank" href=""><img src="img/instagram.png" alt="pinterest"></a></li>
                                 </ul> 
-                            </div> 
             </section>
                                  
             </footer> 
-    </div>       
+    <!-- </div>        -->
 </body>
+<script src="js/jquery-3.6.0.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/bootstrap.bundle.min.js.map"></script>
+<script src="js/bootstrap.esm.min.js"></script>
+<script src="js/bootstrap.esm.min.js.map"></script>
 </html>
