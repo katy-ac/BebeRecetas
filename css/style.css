@@ -14,6 +14,9 @@ nav a {
 	color: inherit;
 	font-size: 16px;
 }
+nav a:hover {
+   color: green;
+}
 
 nav li {
 	font-family: 'DM Sans', sans-serif;
@@ -68,10 +71,6 @@ ul a {
 
 ul li:hover {
 	color: #e8862a;
-}
-
-img {
-	vertical-align: middle;
 }
 #publicidad{
 	width: 100%;
@@ -274,7 +273,7 @@ html {
 }
 
 .logo__img {
-	height: 70%;
+	height: 80%;
 }
 
 #grilla {
@@ -315,7 +314,6 @@ section {
 }
 
 header #menu {
-	padding-top: 20px;
 	padding-bottom: 20px;
 }
 
@@ -389,7 +387,6 @@ header #menu .nav-container nav {
 	font-family: 'DM Sans';
 }
 
-p,
 button,
 span {
 	font-family: "DM Sans";
@@ -412,12 +409,12 @@ span {
 	color: #1F1F1F;
 }
 
-.text-center p {
+/* .text-center p {
 	font-size: 12px;
 	color: #1F1F1F;
 	letter-spacing: 1px;
 	line-height: 23px;
-}
+} */
 
 .text-center form {
 	margin: 29px 0 42px;
@@ -628,4 +625,49 @@ html {
 		bottom: 60px;
 		right: 50px;
 	}
+}
+.titular {
+    height: 125px;
+	width: 100%;
+	float: left;
+}
+.titular h2 {
+    text-transform: uppercase;
+    font-size: 28px !important;
+    letter-spacing: 3.11px;
+    line-height: 43px !important;
+    padding: 0 40px;
+    display: inline-block;
+    margin-top: 33px !important;
+}
+#blog a {
+    color: inherit;
+    display: block;
+    border: 1px solid #f0f0f0;
+    padding: 10px;
+    min-height: 100%;
+}
+main p.bajada {
+    font-weight: lighter;
+    font-size: 12px;
+}
+
+@media (min-width: 1200px) {
+.labelTipoContenido {
+    padding-right: 0 !important;
+    text-align: end;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 0.69px;
+    line-height: 20px;
+}
+}
+.sub-precio{
+	height: 50px;
+    width: 60%;
+    margin: 0 auto;
+    display: block;
+}
+.price-new {
+    vertical-align: middle;
 }
