@@ -1,0 +1,187 @@
+nav li {
+  font-family: "DM Sans", sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  display: block;
+  float: right;
+  margin-top: 14px;
+  margin-right: 30px;
+  padding-right: 30px;
+  line-height: 14px; }
+  nav li a {
+    text-decoration: none;
+    color: inherit;
+    font-size: 16px; }
+    nav li a :hover {
+      color: green; }
+
+#menu ul li {
+  font-family: "DM Sans", sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  display: block;
+  float: right;
+  margin-top: 14px;
+  margin-right: 30px;
+  padding-right: 30px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  line-height: 14px; }
+  #menu ul li a {
+    text-decoration: none;
+    color: inherit;
+    font-size: 16px; }
+    #menu ul li a :hover {
+      color: #e8862a; }
+
+footer .newsletter {
+  padding-top: 70px;
+  padding-bottom: 97px;
+  background: #e8862a;
+  color: #FFF;
+  max-width: 100%;
+  text-align: center; }
+  footer .newsletter form {
+    margin-bottom: 30px; }
+    footer .newsletter form input {
+      width: 20%;
+      margin: 0 5px 0 0;
+      text-align: left;
+      font-family: "DM Sans", sans-serif;
+      font-size: 17px;
+      color: #FFF;
+      letter-spacing: 2.42px;
+      background-color: transparent;
+      padding: 14px;
+      border: 1px solid #FFF; }
+      footer .newsletter form input [type="submit"] {
+        color: #e8862a;
+        background-color: #FFF;
+        border: 1px solid #D0021B;
+        text-align: center; }
+    footer .newsletter form ::-webkit-input-placeholder {
+      opacity: 1;
+      color: #FFF; }
+  footer .newsletter h3 {
+    text-transform: uppercase;
+    font-family: "DM Sans", sans-serif;
+    font-size: 16px;
+    color: #FFF;
+    letter-spacing: 2.77px;
+    line-height: 43px;
+    margin-bottom: 12px; }
+  footer .newsletter p {
+    padding: 0 0 27px 0;
+    font-family: "DM Sans", sans-serif;
+    font-size: 19px;
+    color: #FFF;
+    letter-spacing: 0.94px;
+    line-height: 20px; }
+    footer .newsletter p .rs {
+      font-size: 14px;
+      letter-spacing: 0.69px;
+      line-height: 20px;
+      padding-top: 20px; }
+  footer .newsletter ul {
+    overflow: hidden;
+    text-align: center;
+    width: 100%; }
+  footer .newsletter li {
+    width: 22%;
+    display: inline-block;
+    *display: inline;
+    /*IE7*/
+    *zoom: 1;
+    /*IE7*/
+    overflow: hidden;
+    text-align: center; }
+    footer .newsletter li a:hover {
+      opacity: .7; }
+
+@keyframes slide {
+  0% {
+    transform: translateX(0); }
+  10% {
+    transform: translateX(0); }
+  15% {
+    transform: translateX(-100%); }
+  30% {
+    transform: translateX(-100%); }
+  35% {
+    transform: translateX(-200%); }
+  50% {
+    transform: translateX(-200%); }
+  55% {
+    transform: translateX(-300%); }
+  70% {
+    transform: translateX(-300%); }
+  75% {
+    transform: translateX(-400%); }
+  90% {
+    transform: translateX(-400%); }
+  95% {
+    transform: translateX(-500%); }
+  100% {
+    transform: translateX(-500%); } }
+
+.cover {
+  max-width: 1200px;
+  margin: 0 auto; }
+  .cover .slider {
+    position: relative; }
+    .cover .slider .slides {
+      position: relative;
+      display: flex;
+      overflow: hidden; }
+      .cover .slider .slides .slide {
+        width: 100vw;
+        flex-shrink: 0;
+        animation-name: slide;
+        animation-duration: 20s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+        display: block; }
+      .cover .slider .slides :hover {
+        animation-play-state: paused; }
+      .cover .slider .slides img {
+        width: 100%;
+        vertical-align: top; }
+      .cover .slider .slides a {
+        width: 100%;
+        display: inline-block;
+        position: relative; }
+      .cover .slider .slides .caption {
+        color: white;
+        text-shadow: 1px 1px black;
+        font-size: 8vw;
+        position: absolute;
+        bottom: 8vw;
+        right: 4vw; }
+      .cover .slider .slides :target {
+        animation-name: none;
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 50; }
+
+.slider-controler {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  text-align: center;
+  padding: 5px;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 100; }
+  .slider-controler li {
+    margin: 0 0.5rem;
+    display: inline-block;
+    vertical-align: top; }
+    .slider-controler li a {
+      display: inline-block;
+      vertical-align: top;
+      text-decoration: none;
+      color: white;
+      font-size: 1.5rem; }
