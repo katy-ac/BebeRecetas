@@ -2,7 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&family=DM Sans:wght@100;200;300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=DM Sans:wght@100;200;300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Inter:wght@100;200;300&family=Ubuntu:ital,wght@0,400;0,500;1,500&display=swap');
-
 * {
 	border: 0;
 	box-sizing: border-box;
@@ -10,31 +9,25 @@
 	padding: 0;
 }
 
-$principal-color:#e8862a;
-$font-family-principal:'DM Sans', sans-serif;
-$blanco:#FFF;
-
-nav{
-    li {
-        font-family: $font-family-principal;
-        text-transform: uppercase;
-        font-weight: 700;
-        display: block;
-        float: right;
-        margin-top: 14px;
-        margin-right: 30px;
-        padding-right: 30px;
-        line-height: 14px;
-        a{
-            text-decoration: none;
-            color: inherit;
-            font-size: 16px;
-            :hover {
-                color: green;
-             }
-        }
-    }
-} 
+nav li {
+	font-family: 'DM Sans', sans-serif;
+	text-transform: uppercase;
+	font-weight: 700;
+	display: block;
+	float: right;
+	margin-top: 14px;
+	margin-right: 30px;
+	padding-right: 30px;
+	line-height: 14px;
+}
+nav a {
+	text-decoration: none;
+	color: inherit;
+	font-size: 16px;
+}
+nav a:hover {
+   color: green;
+}
 
 .borde {
 	border-right: 1px solid black;
@@ -42,7 +35,7 @@ nav{
 
 .overbar {
 	height: 44px;
-	background-color: $principal-color;
+	background-color: #e8862a;
 	position: relative;
 	overflow: visible;
 	padding-right: 15px;
@@ -50,115 +43,86 @@ nav{
 	margin-right: auto;
 	margin-left: auto;
 }
-ul {
-    a {
+
+ul a {
 	text-decoration: none;
 	color: inherit;
 	font-size: 16px;
-    }
 }
-#menu ul {
-         li {
-	        font-family: $font-family-principal;
-	        text-transform: uppercase;
-	        font-weight: 700;
-	        display: block;
-	        float: right;
-	        margin-top: 14px;
-	        margin-right: 30px;
-	        padding-right: 30px;
-	        padding-top: 20px;
-	        padding-bottom: 20px;
-	        line-height: 14px;
-            a {
-              text-decoration: none;
-              color: inherit;
-              font-size: 16px;
-              :hover {
-                color: $principal-color;
-            }
-        }
-    }
+
+#menu ul li {
+	font-family: 'DM Sans', sans-serif;
+	text-transform: uppercase;
+	font-weight: 700;
+	display: block;
+	float: right;
+	margin-top: 14px;
+	margin-right: 30px;
+	padding-right: 30px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	line-height: 14px;
 }
-#publicidad{
-	width: 100%;
+
+ul li:hover {
+	color: #e8862a;
 }
-footer {
-    .newsletter {
-        padding-top: 70px;
-        padding-bottom: 97px;
-        background: $principal-color;
-        color: $blanco;
-        max-width: 100%;
-        text-align: center;
-        form {
-            margin-bottom: 30px;
-            input {
-                width: 20%;
-                margin: 0 5px 0 0;
-                text-align: left;
-                font-family: $font-family-principal;
-                font-size: 17px;
-                color: $blanco;
-                letter-spacing: 2.42px;
-                background-color: transparent;
-                padding: 14px;
-                border: 1px solid $blanco;
-                [type="submit"] {
-                    color: $principal-color;
-                    background-color: $blanco;
-                    border: 1px solid #D0021B;
-                    text-align: center
-                }
-                ::-webkit-input-placeholder {
-                    opacity: 1;
-                    color: $blanco;
-                } 
-            }
-            
-        }
-        h3 {
-            text-transform: uppercase;
-            font-family: $font-family-principal;
-            font-size: 16px;
-            color: $blanco;
-            letter-spacing: 2.77px;
-            line-height: 43px;
-            margin-bottom: 12px;
-        }
-        p {
-            padding: 0 0 27px 0;
-            font-family: $font-family-principal;
-            font-size: 19px;
-            color: $blanco;
-            letter-spacing: 0.94px;
-            line-height: 20px;
-            .rs {
-                font-size: 14px;
-                letter-spacing: 0.69px;
-                line-height: 20px;
-                padding-top: 20px;
-            }
-        }
-        ul {
-            overflow: hidden;
-            text-align: center;
-            width: 100%;
-        }
-        li {
-            width: 22%;
-            display: inline-block;
-            *display: inline;
-            /*IE7*/
-            *zoom: 1;
-            /*IE7*/
-            overflow: hidden;
-            text-align: center;
-            a:hover {
-                opacity: .7;
-            }
-        }
-    }
+
+
+footer .newsletter {
+	padding-top: 70px;
+	padding-bottom: 97px;
+	background: #e8862a;
+	color: #FFF;
+	max-width: 100%;
+	text-align: center;
+}
+
+footer .newsletter form {
+	margin-bottom: 30px;
+}
+
+footer .newsletter form input {
+	width: 20%;
+	margin: 0 5px 0 0;
+	text-align: left;
+	font-family: 'DM Sans', sans-serif;
+	font-size: 17px;
+	color: #fff;
+	letter-spacing: 2.42px;
+	background-color: transparent;
+	padding: 14px;
+	border: 1px solid #fff;
+}
+
+footer .newsletter form input[type="submit"] {
+	color: #e8862a;
+	background-color: #fff;
+	border: 1px solid #D0021B;
+	text-align: center
+}
+
+footer .newsletter h3 {
+	text-transform: uppercase;
+	font-family: 'DM Sans', sans-serif;
+	font-size: 16px;
+	color: #FFF;
+	letter-spacing: 2.77px;
+	line-height: 43px;
+	margin-bottom: 12px;
+}
+
+footer .newsletter p {
+	padding: 0 0 27px 0;
+	font-family: 'DM Sans', sans-serif;
+	font-size: 19px;
+	color: #FFF;
+	letter-spacing: 0.94px;
+	line-height: 20px;
+}
+footer .newsletter form input::-webkit-input-placeholder {
+	opacity: 1;
+	color: #fff;
 }
 
 @media (max-width: 580px) {
@@ -268,7 +232,7 @@ body,
 html {
 	padding: 7.5px;
 	position: relative;
-	/* background-image: url("../img/fondo.png");
+	/* background-image: url("../../img/fondo.png");
 	background-size: contain; */
 	background-color: #fff7f2;
 	scroll-behavior: smooth;
@@ -485,6 +449,7 @@ span {
 	text-decoration: none;
 	color: #e8862a;
   }
+
 @keyframes slide {
 	0% {
 		transform: translateX(0);
@@ -526,52 +491,60 @@ span {
 .cover {
 	max-width: 1200px;
 	margin: 0 auto;
-    .slider {
-        position: relative;
-        .slides {
-            position: relative;
-            display: flex;
-            overflow: hidden;
-            .slide {
-                width: 100vw;
-                flex-shrink: 0;
-                animation-name: slide;
-                animation-duration: 20s;
-                animation-iteration-count: infinite;
-                animation-timing-function: linear;
-                display: block;
-            }
-            :hover{
-                animation-play-state: paused;
-            }
-            img {
-                width: 100%;
-                vertical-align: top;
-            }
-            a {
-                width: 100%;
-                display: inline-block;
-                position: relative;
-            }
-            .caption {
-                color: white;
-                text-shadow: 1px 1px black;
-                font-size: 8vw;
-                position: absolute;
-                bottom: 8vw;
-                right: 4vw;
-            }
-            :target {
-                animation-name: none;
-                position: absolute;
-                left: 0;
-                top: 0;
-                right: 0;
-                bottom: 0;
-                z-index: 50;
-            }
-        }
-    }
+}
+
+.slider {
+	position: relative;
+}
+
+.slides {
+	position: relative;
+	display: flex;
+	overflow: hidden;
+}
+
+.slide {
+	width: 100vw;
+	flex-shrink: 0;
+	animation-name: slide;
+	animation-duration: 20s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+	display: block;
+}
+
+.slides:hover .slide {
+	animation-play-state: paused;
+}
+
+.slide img {
+	width: 100%;
+	vertical-align: top;
+}
+
+.slide a {
+	width: 100%;
+	display: inline-block;
+	position: relative;
+}
+
+.caption {
+	color: white;
+	text-shadow: 1px 1px black;
+	font-size: 8vw;
+	position: absolute;
+	bottom: 8vw;
+	right: 4vw;
+}
+
+.slide:target {
+	animation-name: none;
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 50;
 }
 
 .slider-controler {
@@ -583,112 +556,32 @@ span {
 	padding: 5px;
 	background-color: rgba(0, 0, 0, 0.5);
 	z-index: 100;
-    li {
-        margin: 0 0.5rem;
-        display: inline-block;
-        vertical-align: top;
-        a {
-            display: inline-block;
-            vertical-align: top;
-            text-decoration: none;
-            color: white;
-            font-size: 1.5rem;
-        }
-    }
-}
-$breakpoints: (
-  xs: 0,
-  sm: 576px,
-  md: 768px,
-  lg: 992px,
-  xl: 1200px
-);
-
-@mixin breakpoint($size) {
-  @if map-has-key($breakpoints, $size) {
-    @media (min-width: #{map-get($breakpoints, $size)}) {
-            @content;
-        }
-    }
 }
 
-.hidden-lg{
-  @include breakpoint (xl){
-    display: none !important;
-  }
+.slider-controler li {
+	margin: 0 0.5rem;
+	display: inline-block;
+	vertical-align: top;
 }
-.slide {
-    @include breakpoint (xl){
-    width: 1200px;
-    }
+
+.slider-controler a {
+	display: inline-block;
+	vertical-align: top;
+	text-decoration: none;
+	color: white;
+	font-size: 1.5rem;
 }
-.caption {
-    @include breakpoint (xl){
-        font-size: 60px;
+
+@media only screen and (min-width: 1200px) {
+	.slide {
+		width: 1200px;
+	}
+	.caption {
+		font-size: 60px;
 		bottom: 60px;
 		right: 50px;
-    }
+	}
 }
-
-.labelTipoContenido {
-    @include breakpoint (xl){
-    padding-right: 0 !important;
-    text-align: end;
-    text-transform: uppercase;
-    font-size: 12px;
-    letter-spacing: 0.69px;
-    line-height: 20px;
-    }
-}
-footer label {
-    @include breakpoint (md){
-    max-width: 90%;
-	text-transform: uppercase;
-    }
-}
-.mayuscula{
-    font-family: 'DM Sans', sans-serif;
-	text-transform: uppercase;
-}
-nav li {
-	@extend .mayuscula;
-	font-weight: 700;
-	display: block;
-	float: right;
-	margin-top: 14px;
-	margin-right: 30px;
-	padding-right: 30px;
-	line-height: 14px;
-}
-#menu ul li {
-	@extend .mayuscula;
-	font-weight: 700;
-	display: block;
-	float: right;
-	margin-top: 14px;
-	margin-right: 30px;
-	padding-right: 30px;
-	padding-top: 20px;
-	padding-bottom: 20px;
-	line-height: 14px;
-}
-footer .newsletter h3 {
-	@extend .mayuscula;
-	font-size: 16px;
-	color: #FFF;
-	letter-spacing: 2.77px;
-	line-height: 43px;
-	margin-bottom: 12px;
-}
-.item-receta .content h2 a {
-    @extend .mayuscula;
-	font-size: 15px;
-	color: #1F1F1F;
-	letter-spacing: 1.36px;
-	line-height: 21.6px;
-	float: left;
-}
-
 .titular {
     height: 125px;
 	width: 100%;
